@@ -35,7 +35,7 @@ class User_validation(Resource):
             
         return jsonify(result)
     
-api.add_resource(User_validation,'https://www.contractawardsinfo.com/user-validation/username=<string:username>&password=<string:password>')
+api.add_resource(User_validation,'/user-validation/username=<string:username>&password=<string:password>')
 
 if __name__ == "__main__":
     app.run(debug=True)
