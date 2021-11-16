@@ -33,7 +33,7 @@ class User_validation(Resource):
         else:
             result = {"status":False,"Data":'Invalid Username Password'}
             
-        return jsonify(result)
+        return jsonify({'result':'test'})
     
 api.add_resource(User_validation,'/user-validation/username=<string:username>&password=<string:password>')
 
