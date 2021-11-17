@@ -38,4 +38,4 @@ class User_validation(Resource):
 api.add_resource(User_validation,'/user-validation/username=<string:username>&password=<string:password>')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
